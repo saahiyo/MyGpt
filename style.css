@@ -1,0 +1,200 @@
+  @import url('https://fonts.googleapis.com/css2?family=Barlow&family=Montserrat:wght@600&display=swap');
+  
+:root {
+  --background-color: #fff;
+  --border-color: #000;
+  --dark-background: #111;
+  --text-color: #000;
+  --placeholder-color: #000;
+  --primary-background: #F5F5F5;
+  --outer-background:#ccc;
+  --nav-text: #424242;
+  --nav-span: #9E9E9E;
+  --input-background: #E0E0E0;
+  --send-icon: #000;
+  --modes-color:#111;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--outer-background);
+}
+
+.container {
+  height: 90vh;
+  width: 90vw;
+  border-radius: 10px;
+  background-color: var(--primary-background);
+  position: relative;
+}
+
+nav {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  position: relative;
+  margin-top: 1em;
+}
+
+.menu {
+  font-size: 1.8em;
+}
+.menu,
+.dot,
+.edit {
+ color: var(--text-color);
+}
+.right {
+  position: absolute;
+  right: 0;
+}
+
+.edit,
+.dot {
+  font-size: 1.8em;
+  margin: 5px;
+}
+
+nav h3 {
+  font-size: 1.5em;
+  margin-left: 8px;
+  font-weight: 500;
+  color: var(--nav-text);
+}
+
+nav h3 span {
+  color: var(--nav-span);
+  margin-left: 5px;
+}
+
+.enter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 10px 0;
+}
+
+input {
+  border-radius: 100px;
+  background-color: var(--input-background);
+  position: relative;
+  outline: none;
+  border: none;
+  width: 95%;
+  padding: 1.2em;
+  bottom: 0;
+}
+
+input::placeholder {
+  font-size: 1.2em;
+  color: var(--placeholder-color);
+}
+
+.send {
+  position: absolute;
+  font-size: 1.4em;
+  right: 9%;
+  color: var(--send-icon);
+  
+}
+
+.img {
+  width: 100%;
+  height: calc(90% - 10vh);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+img {
+  height: 10em;
+  width: 10em;
+  object-fit: cover;
+  opacity: 20%;
+}
+
+.inContainer {
+  height: calc(90% - 10vh);
+  width: 100%;
+  position: absolute;
+  overflow: auto;
+  padding: 5px;
+}
+/*
+.dotcontainer {
+  width:100%;
+  display:flex;
+  justify-content:flex-end;
+  transform:translateY(-100%);
+}
+.dotOption {
+ min-height:3em;
+ width:9em;
+ border-radius:10px;
+ display:flex;
+ justify-content:center;
+ align-items:center;
+ color: #fff;
+ background-color: var(--modes-color);
+}
+*/
+.userbox {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+
+.userbox p {
+  background-color: var(--border-color);
+ font-family: 'Barlow', sans-serif;
+  padding: 10px;
+  border-radius: 10px;
+  color: var(--background-color);
+  max-width: 70%;
+  margin-bottom: 0;
+}
+
+.chatGpt {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+
+.chatGpt p {
+  background-color: var(--background-color);
+  color: var(--border-color);
+  padding: 10px;
+  font-family: 'Barlow', sans-serif;
+  border-radius: 10px;
+  max-width: 70%;
+  margin-bottom: 0;
+  border: 1px solid;
+  border-color: var(--border-color);
+}
